@@ -71,6 +71,12 @@ body {
   cursor: pointer;
 }
 
+footer {
+  text-align: center;
+  padding: 10px;
+  color: #333;
+}
+
 /* 기본 스타일 설정: 데스크탑에서 3열로 표시 */
 .gallery {
   display: flex;
