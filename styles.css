@@ -1,29 +1,33 @@
-/* 기본 스타일 설정 */
+/* Basic body styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  opacity: 0; /* 초기 상태에서 투명도 0 */
-  transition: opacity 2s ease-in-out; /* 페이드 인 애니메이션 */
+  opacity: 0; /* Fade-in effect */
+  transition: opacity 2s ease-in-out;
 }
 
+/* Gallery container */
 .gallery {
   display: flex;
   justify-content: center;
   padding: 10px;
 }
 
+/* Gallery columns */
 .gallery-column {
   flex: 1;
   margin: 5px;
 }
 
+/* Gallery items */
 .gallery-item {
   margin-bottom: 10px;
   overflow: hidden;
   position: relative;
 }
 
+/* Images in gallery */
 .gallery-item img {
   display: block;
   width: 100%;
@@ -32,10 +36,12 @@ body {
   cursor: pointer;
 }
 
+/* Image hover effect */
 .gallery-item img:hover {
   transform: scale(1.1);
 }
 
+/* Overlay for enlarged image */
 .overlay {
   visibility: hidden;
   opacity: 0;
@@ -72,13 +78,14 @@ body {
   cursor: pointer;
 }
 
+/* Footer styling */
 footer {
   text-align: center;
   padding: 10px;
   color: #333;
 }
 
-/* 반응형 디자인 설정 */
+/* Responsive design for mobile */
 @media (max-width: 768px) {
   .gallery {
     flex-direction: column;
