@@ -1,3 +1,4 @@
+/* 기본 스타일 설정 */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -77,17 +78,7 @@ footer {
   color: #333;
 }
 
-/* 기본 스타일 설정: 데스크탑에서 3열로 표시 */
-.gallery {
-  display: flex;
-}
-
-.gallery-column {
-  flex: 1;
-  margin: 5px;
-}
-
-/* 모바일 스타일 설정: 1열로 표시 */
+/* 반응형 디자인 설정 */
 @media (max-width: 768px) {
   .gallery {
     flex-direction: column;
