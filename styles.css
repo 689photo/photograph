@@ -1,10 +1,35 @@
+/* Fade-in effect */
+body {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#logo {
+  display: inline-block;
+  font-size: 2em;
+  letter-spacing: -0.5em; /* 초기 자간을 모든 글자가 겹치도록 설정 */
+  transition: letter-spacing 5s ease;
+}
+
+#logo.expand {
+  letter-spacing: 0em; /* 정상 자간으로 설정 */
+}
+
 /* Basic body styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  opacity: 0; /* Fade-in effect */
-  transition: opacity 2s ease-in-out;
 }
 
 /* Gallery container */

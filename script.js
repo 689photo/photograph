@@ -1,7 +1,6 @@
-// Wait until the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function () {
   // Trigger fade-in effect by setting body opacity to 1
-  document.body.style.opacity = '1';
+  document.body.classList.add('fade-in');
 
   // Get elements for overlay functionality
   const overlay = document.getElementById('overlay');
@@ -27,4 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
       overlay.classList.remove('visible');
     }
   });
+
+  // Trigger letter-spacing animation
+  setTimeout(() => {
+    const logo = document.getElementById('logo');
+    logo.classList.add('expand');
+  }, 3000); // 3초 지연 후 실행
 });
