@@ -17,12 +17,22 @@ body {
 /* 컨테이너를 화면 가운데 배치 */
 .container {
   display: flex;
-  flex-direction: column;
-  width: 80%;
+  flex-direction: row; /* 가로 배치 */
+  flex-wrap: wrap;
+  justify-content: space-around; /* 자식 요소들 사이에 space-around 적용 */
+  width: 70%;
   height: 100%;
-  justify-content: center;
   align-items: center;
-  position: relative;
+  background-color: transparent; /* 투명 배경 */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column; /* 가로 배치 */
+  justify-content: space-around; /* 자식 요소들 사이에 space-around 적용 */
+  width: 50%;
+  height: 100%;
+  align-items: center;
   background-color: transparent; /* 투명 배경 */
 }
 
@@ -37,7 +47,6 @@ div {
 #div3 {
   background-color: white; /* 모든 div의 배경색을 하얀색으로 설정 */
   box-shadow: 0 0 32px 16px rgba(0, 0, 0, 0.3); /* 그림자를 더 진하고 넓게 설정 */
-  position: absolute;
 }
 
 /* #div1 스타일 - 좌측 */
@@ -46,10 +55,8 @@ div {
   flex-direction: column;
   justify-content: flex-end; /* 자식 요소들을 바닥에 정렬 */
   height: 90%;
-  width: 45%;
-  max-width: 900px;
-  left: 10%;
-  top: 5%;
+  width: 50%;
+  min-width: 700px;
 }
 
 #div1-1,
@@ -60,7 +67,6 @@ div {
 }
 
 #div1-1 {
-  justify-content: flex-start;
   font-size: calc(3vw + 1vh); /* 화면 크기에 비례하여 폰트 크기 설정 */
 }
 
@@ -88,10 +94,8 @@ div {
   flex-direction: column;
   justify-content: flex-end; /* 자식 요소들을 바닥에 정렬 */
   height: 60%;
-  width: 40%;
-  max-width: 700px;
-  right: 3%;
-  top: 5%;
+  width: 80%;
+  min-width: 535px;
 }
 
 #div2-1,
@@ -116,18 +120,68 @@ div {
 /* #div3 스타일 - 우측 하단 */
 #div3 {
   height: 20%;
-  width: 40%;
-  max-width: 700px;
-  right: 3%;
-  bottom: 5%;
+  width: 80%;
   font-size: calc(1vw + 1vh); /* 화면 크기에 비례하여 폰트 크기 설정 */
+  min-width: 535px;
 }
 
 /* 중앙 텍스트 스타일 */
 .centered-text {
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+}
+
+@media (max-width: 2000px) {
+  body {
+    overflow: auto; /* 스크롤 활성화 */
+  }
+
+  div {
+    margin-top: 30px;
+  }
+
+  /* .container 스타일 */
+  .container {
+    width: 80%; /* 예시로 너비를 40%로 조정 */
+    height: 3900px; /* 높이를 자동으로 조정 */
+    flex-direction: column;
+  }
+
+  /* #div1 스타일 */
+  #div1 {
+    height: 1500px;
+    width: 100%; /* 예시로 너비를 40%로 조정 */
+  }
+
+  #div1-2 {
+    height: 700px;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: 1100px;
+  }
+
+  /* #div2 스타일 - 우측 상단 */
+  #div2 {
+    height: 800px; /* 예시로 높이를 50%로 조정 */
+    width: 100%; /* 가로 배치를 위해 너비를 100%로 조정 */
+    max-width: none; /* 최대 너비 제한 해제 */
+    position: static; /* 상대 위치로 설정 */
+  }
+
+  /* #div3 스타일 - 우측 하단 */
+  #div3 {
+    height: 200px; /* 예시로 높이를 30%로 조정 */
+    width: 100%; /* 가로 배치를 위해 너비를 100%로 조정 */
+    max-width: none; /* 최대 너비 제한 해제 */
+    position: static; /* 상대 위치로 설정 */
+  }
+
+  /* 기타 필요한 스타일 수정 */
+  .centered-text {
+    font-size: calc(1.5vw + 1vh); /* 화면 크기에 비례하여 폰트 크기 조정 */
+  }
 }
