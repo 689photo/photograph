@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Apply fade-in effect after 3 seconds
   setTimeout(() => {
     document.body.classList.add('fade-in');
-  }, 1000);
+  }, 3000);
 
   // Get elements for overlay functionality
   const overlay = document.getElementById('overlay');
@@ -28,10 +28,4 @@ document.addEventListener('DOMContentLoaded', function () {
       overlay.classList.remove('visible');
     }
   });
-
-  // Trigger letter-spacing animation
-  setTimeout(() => {
-    const logo = document.getElementById('logo');
-    logo.classList.add('expand');
-  }, 3000); // Trigger after 3 seconds
 });

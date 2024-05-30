@@ -14,12 +14,7 @@ header {
 #logo {
   display: inline-block;
   font-size: 2em;
-  letter-spacing: -0.5em; /* Initial letter-spacing to overlap letters */
-  transition: letter-spacing 5s ease;
-}
-
-#logo.expand {
-  letter-spacing: 0em; /* Normal letter-spacing */
+  letter-spacing: normal;
 }
 
 /* Gallery container */
