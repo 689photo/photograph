@@ -5,18 +5,6 @@ body {
   padding: 0;
 }
 
-/* Header styling */
-header {
-  text-align: center;
-  margin-top: 20px;
-}
-
-#logo {
-  display: inline-block;
-  font-size: 2em;
-  letter-spacing: normal;
-}
-
 /* Gallery container */
 .gallery {
   display: flex;
