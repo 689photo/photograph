@@ -1,3 +1,4 @@
+/* 기본 설정 */
 body {
   margin: 0;
   padding: 0;
@@ -15,6 +16,7 @@ div {
   overflow: hidden;
 }
 
+/* 공통 스타일 */
 #div1,
 #div2,
 #div3 {
@@ -23,6 +25,7 @@ div {
   position: absolute;
 }
 
+/* #div1 스타일 */
 #div1 {
   display: flex;
   flex-direction: column;
@@ -63,6 +66,7 @@ div {
   object-position: center;
 }
 
+/* #div2 스타일 */
 #div2 {
   display: flex;
   flex-direction: column;
@@ -75,7 +79,7 @@ div {
 
 #div2-1,
 #div2-2 {
-  margin: 25px; /* 상하좌우에 50px 여백 추가 */
+  margin: 25px; /* 상하좌우에 25px 여백 추가 */
   display: flex;
   align-items: center;
 }
@@ -92,6 +96,7 @@ div {
   position: relative; /* 절대 위치 지정용 기준 설정 */
 }
 
+/* 슬라이더 스타일 */
 .slider {
   display: inline-block;
   height: 65%; /* 부모 div의 세로 65%로 고정 */
@@ -116,6 +121,7 @@ div {
   opacity: 1; /* 페이드인 시 완전히 보이도록 설정 */
 }
 
+/* #div3 스타일 */
 #div3 {
   height: 20%;
   width: 40%;
@@ -123,6 +129,7 @@ div {
   bottom: 5%;
 }
 
+/* 중앙 텍스트 스타일 */
 .centered-text {
   position: absolute;
   top: 50%;
