@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Apply fade-in effect after 3 seconds
   setTimeout(() => {
     document.body.classList.add('fade-in');
-  }, 3000);
+  }, 1000);
 
   // Get elements for overlay functionality
   const overlay = document.getElementById('overlay');
