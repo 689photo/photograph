@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Div Layout</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="div1">
+      <div id="div1-1">PHOTOGRAPHY</div>
+      <div id="div1-2">
+        <a href="photography.html"><img src="photo306.jpg" alt="Photo" /></a>
+      </div>
+    </div>
+    <div id="div2">
+      <div id="div2-1">이곳에도 텍스트를 입력하세요.</div>
+      <div id="div2-2" class="slider">
+        <img class="slides" src="photo201.jpg" />
+        <img class="slides" src="photo202.jpg" />
+        <img class="slides" src="photo203.jpg" />
+        <img class="slides" src="photo204.jpg" />
+      </div>
+    </div>
+    <div id="div3">
+      <div class="centered-text" onclick="toggleOverlay('photo-large.jpg')">689photo</div>
+    </div>
+    <script src="mainScript.js"></script>
+  </body>
+</html>
