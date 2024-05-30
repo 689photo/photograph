@@ -3,31 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Div Layout</title>
+    <title>689photo's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="indexAnimation.css" />
     <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@900&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <div id="div1">
-      <div id="div1-1">PHOTOGRAPHY</div>
-      <div id="div1-2">
-        <a href="photography.html"><img src="photography/photo102.jpg" alt="Photo" /></a>
+    <div class="container">
+      <div id="div1">
+        <div id="div1-1">PHOTOGRAPHY</div>
+        <div id="div1-2">
+          <a href="photography.html"><img src="photography/photo102.jpg" alt="Photo" /></a>
+        </div>
       </div>
-    </div>
-    <div id="div2">
-      <div id="div2-1">
-        KOREAN <br />
-        LOCALIZATION
+      <div id="div2">
+        <div id="div2-1">
+          KOREAN <br />
+          LOCALIZATION
+        </div>
+        <div id="div2-2" class="slider">
+          <img class="slides" src="thumb/j0.webp" />
+          <img class="slides" src="thumb/k0.webp" />
+          <img class="slides" src="thumb/p0.webp" />
+          <img class="slides" src="thumb/s0.webp" />
+        </div>
       </div>
-      <div id="div2-2" class="slider">
-        <img class="slides" src="thumb/j0.webp" />
-        <img class="slides" src="thumb/k0.webp" />
-        <img class="slides" src="thumb/p0.webp" />
-        <img class="slides" src="thumb/s0.webp" />
+      <div id="div3">
+        <div class="centered-text" onclick="window.open('https://www.instagram.com/689photo', '_blank')">CONTACT</div>
       </div>
-    </div>
-    <div id="div3">
-      <div class="centered-text" onclick="toggleOverlay('photography/businessCard.jpg')">CONTACT</div>
     </div>
     <script src="mainScript.js"></script>
   </body>

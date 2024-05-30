@@ -1,0 +1,26 @@
+/* animation.css */
+
+/* 슬라이더 스타일 */
+.slider {
+  display: inline-block;
+  height: 65%; /* 부모 div의 세로 65%로 고정 */
+  overflow: hidden; /* 넘치는 부분은 자름 */
+  position: relative; /* 절대 위치 지정용 기준 설정 */
+}
+
+.slides {
+  position: absolute; /* 절대 위치 지정 */
+  top: 50%; /* 수직 중앙 정렬 */
+  left: 50%; /* 수평 중앙 정렬 */
+  width: 100%; /* 비율을 유지하며 너비 자동 조정 */
+  height: auto; /* div의 높이에 맞춤 */
+  transform: translate(-50%, -50%); /* 중앙 정렬 보정 */
+  object-fit: cover;
+  object-position: center;
+  opacity: 0; /* 기본적으로 투명하게 설정 */
+  transition: opacity 1s ease-in-out; /* 페이드인 애니메이션 적용 */
+}
+
+.slides.active {
+  opacity: 1; /* 페이드인 시 완전히 보이도록 설정 */
+}
