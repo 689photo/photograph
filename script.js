@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Trigger fade-in effect by setting body opacity to 1
-  document.body.classList.add('fade-in');
+  // Apply fade-in effect after 3 seconds
+  setTimeout(() => {
+    document.body.classList.add('fade-in');
+  }, 1000);
 
   // Get elements for overlay functionality
   const overlay = document.getElementById('overlay');
@@ -31,5 +33,5 @@ document.addEventListener('DOMContentLoaded', function () {
   setTimeout(() => {
     const logo = document.getElementById('logo');
     logo.classList.add('expand');
-  }, 3000); // 3초 지연 후 실행
+  }, 3000); // Trigger after 3 seconds
 });

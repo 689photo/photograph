@@ -1,0 +1,54 @@
+/* Initial style: keep the white screen */
+body {
+  opacity: 0;
+  background-color: white;
+  transition: opacity 3s, background-color 0s 3s;
+}
+
+/* Fade-in effect */
+body.fade-in {
+  opacity: 1;
+  background-color: transparent;
+}
+
+/* Image hover effect */
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/* Overlay for enlarged image */
+.overlay {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  z-index: 1000;
+}
+
+.overlay.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlay img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
