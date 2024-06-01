@@ -56,7 +56,6 @@ div {
   justify-content: flex-end; /* 자식 요소들을 바닥에 정렬 */
   height: 90%;
   width: 50%;
-  min-width: 700px;
 }
 
 #div1-1,
@@ -95,7 +94,6 @@ div {
   justify-content: flex-end; /* 자식 요소들을 바닥에 정렬 */
   height: 60%;
   width: 80%;
-  min-width: 535px;
 }
 
 #div2-1,
@@ -122,11 +120,12 @@ div {
   height: 20%;
   width: 80%;
   font-size: calc(1vw + 1vh); /* 화면 크기에 비례하여 폰트 크기 설정 */
-  min-width: 535px;
+  position: relative; /* 상대 위치로 설정 */
 }
 
 /* 중앙 텍스트 스타일 */
 .centered-text {
+  position: absolute; /* 절대 위치 지정 */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -145,7 +144,7 @@ div {
   /* .container 스타일 */
   .container {
     width: 80%; /* 예시로 너비를 40%로 조정 */
-    height: 3900px; /* 높이를 자동으로 조정 */
+    height: auto; /* 높이를 자동으로 조정 */
     flex-direction: column;
   }
 
@@ -177,11 +176,74 @@ div {
     height: 200px; /* 예시로 높이를 30%로 조정 */
     width: 100%; /* 가로 배치를 위해 너비를 100%로 조정 */
     max-width: none; /* 최대 너비 제한 해제 */
-    position: static; /* 상대 위치로 설정 */
+    position: relative; /* 상대 위치로 설정 */
   }
 
   /* 기타 필요한 스타일 수정 */
   .centered-text {
+    position: absolute; /* 절대 위치 지정 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: calc(1.5vw + 1vh); /* 화면 크기에 비례하여 폰트 크기 조정 */
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    overflow: auto; /* 스크롤 활성화 */
+  }
+
+  div {
+    margin-top: 30px;
+  }
+
+  /* .container 스타일 */
+  .container {
+    width: 80%; /* 예시로 너비를 40%로 조정 */
+    height: auto; /* 높이를 자동으로 조정 */
+    flex-direction: column;
+  }
+
+  /* #div1 스타일 */
+  #div1 {
+    height: 1000px;
+    width: 100%; /* 예시로 너비를 40%로 조정 */
+  }
+
+  #div1-2 {
+    height: 700px;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: 700px;
+  }
+
+  /* #div2 스타일 - 우측 상단 */
+  #div2 {
+    height: 500px; /* 예시로 높이를 50%로 조정 */
+    width: 100%; /* 가로 배치를 위해 너비를 100%로 조정 */
+    max-width: none; /* 최대 너비 제한 해제 */
+    position: static; /* 상대 위치로 설정 */
+  }
+
+  /* #div3 스타일 - 우측 하단 */
+  #div3 {
+    height: 100px; /* 예시로 높이를 30%로 조정 */
+    width: 100%; /* 가로 배치를 위해 너비를 100%로 조정 */
+    max-width: none; /* 최대 너비 제한 해제 */
+    position: relative; /* 상대 위치로 설정 */
+  }
+
+  /* 기타 필요한 스타일 수정 */
+  .centered-text {
+    position: absolute; /* 절대 위치 지정 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
     font-size: calc(1.5vw + 1vh); /* 화면 크기에 비례하여 폰트 크기 조정 */
   }
 }
