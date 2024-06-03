@@ -1,37 +1,44 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>689photo's Portfolio</title>
+    <title>Photographer Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="indexAnimation.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@900&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div class="container">
-      <div id="div1">
-        <div id="div1-1">PHOTOGRAPHY</div>
-        <div id="div1-2">
-          <a href="photography.html"><img src="photography/photo102.jpg" alt="Photo" /></a>
-        </div>
-      </div>
-      <div class="wrapper">
-        <div id="div2">
-          <div id="div2-1">
-            KOREAN <br />
-            LOCALIZATION
-          </div>
-          <div id="div2-2" class="slider">
-            <img class="slides" src="thumb/j0.webp" />
-            <img class="slides" src="thumb/k0.webp" />
-            <img class="slides" src="thumb/p0.webp" />
-            <img class="slides" src="thumb/s0.webp" />
+      <section class="profile-section">
+        <div class="profile">
+          <div class="profile-items">
+            <div class="profile-item">Profile 1</div>
+            <div class="profile-item">Profile 2</div>
+            <div class="profile-item">Profile 3</div>
           </div>
         </div>
-        <div id="div3">
-          <div class="centered-text" onclick="window.open('https://www.instagram.com/689photo', '_blank')">CONTACT</div>
+        <div class="sns-list">
+          <div class="sns-items">
+            <div class="sns-item">SNS 1</div>
+            <div class="sns-item">SNS 2</div>
+            <div class="sns-item">SNS 3</div>
+          </div>
         </div>
+        <div class="mini-projects">
+          <div class="mini-projects-items">
+            <div class="mini-project-item">Mini Project 1</div>
+            <div class="mini-project-item">Mini Project 2</div>
+            <div class="mini-project-item">Mini Project 3</div>
+            <div class="mini-project-item">Mini Project 4</div>
+            <div class="mini-project-item">Mini Project 5</div>
+          </div>
+        </div>
+      </section>
+      <div class="photo-gallery">
+        <img src="photography/photo101.jpg" alt="Photo 1" />
+        <img src="photography/photo102.jpg" alt="Photo 2" />
+        <img src="photography/photo104.jpg" alt="Photo 3" />
+        <img src="photography/photo105.jpg" alt="Photo 4" />
+        <!-- Add more photos as needed -->
       </div>
     </div>
     <script src="mainScript.js"></script>
