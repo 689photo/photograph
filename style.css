@@ -7,7 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow: hidden; /* 전체 페이지 스크롤을 방지 */
+  overflow: hidden; /* Prevents entire page scrolling */
   font-size: 0.85vw;
 }
 
@@ -20,13 +20,13 @@ body {
   box-sizing: border-box;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 p {
-  margin: 2px 0; /* 약간의 여백을 추가 */
-  font-size: 0.8em; /* 폰트 크기를 조금 작게 설정 */
-  opacity: 0.5; /* 전체 요소의 불투명도를 50%로 설정 */
+  margin: 2px 0; /* Adds slight margin */
+  font-size: 0.8em; /* Sets font size slightly smaller */
+  opacity: 0.5; /* Sets overall opacity to 50% */
 }
 
 .fa-github:hover {
@@ -42,14 +42,11 @@ p {
   gap: 1vw;
 }
 
-.profile {
-  padding: 0.5vw;
-}
-
+.profile,
 .common-box {
   padding: 0.5vw;
-  border: 1px solid rgba(0, 0, 0, 0.1); /* 반투명의 검정색 윤곽선 */
-  border-radius: 10px; /* 모서리를 둥글게 */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Semi-transparent border */
+  border-radius: 10px; /* Rounded corners */
 }
 
 .text-center {
@@ -62,26 +59,25 @@ p {
   gap: 0.25vw;
 }
 
-.profile-items {
-  display: flex; /* 가로 정렬 */
+.profile {
+  display: flex; /* Align items horizontally */
   justify-content: space-between;
 }
 
 .right-align {
   display: flex;
-  justify-content: flex-end; /* 컨텐츠를 오른쪽으로 정렬 */
-  gap: 0.3vw; /* 아이콘 간의 간격 설정 */
-  align-items: center; /* 컨텐츠를 수직 중앙 정렬 */
+  justify-content: flex-end; /* Align contents to the right */
+  gap: 0.3vw; /* Set gap between icons */
+  align-items: center; /* Vertically center contents */
 }
 
 .profile-item,
 .sns-item,
 .mini-project-item {
-  display: flex; /* 가로 정렬을 위한 Flexbox 설정 */
-  flex-direction: row; /* 가로 방향으로 정렬 */
-  align-items: center; /* 아이템들을 수직 중앙 정렬 */
-  justify-content: space-between; /* 아이템 간의 간격을 고르게 설정 */
-  margin: 0 5px; /* 아이템 간의 여백을 설정 */
+  display: flex; /* Flexbox for horizontal alignment */
+  flex-direction: row; /* Align items horizontally */
+  align-items: center; /* Vertically center items */
+  margin: 0 5px; /* Set margin between items */
 }
 
 .profile-detail {
@@ -94,31 +90,25 @@ p {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  overflow-y: scroll; /* 수직 스크롤을 활성화 */
+  overflow-y: scroll; /* Enable vertical scrolling */
   padding-right: 0.5%;
 }
 
-.photo-gallery img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-/* 스크롤바를 숨깁니다 */
+/* Hide scrollbar */
 .photo-gallery {
-  -ms-overflow-style: none; /* 인터넷 익스플로러 */
-  scrollbar-width: none; /* 파이어폭스 */
+  -ms-overflow-style: none; /* IE */
+  scrollbar-width: none; /* Firefox */
 }
 
 .photo-gallery::-webkit-scrollbar {
-  display: none; /* 크롬, 사파리, 오페라 */
+  display: none; /* Chrome, Safari, Opera */
 }
 
 .profile-picture {
   width: 2.5vw;
   height: 2.5vw;
   border-radius: 25%;
-  object-fit: cover; /* 이미지가 잘리지 않고 꽉 차도록 */
+  object-fit: cover; /* Ensures image covers the area */
 }
 
 .sns-icon img {
@@ -134,26 +124,26 @@ p {
 }
 
 .subname {
-  font-size: 0.9em; /* 폰트 크기를 조금 작게 설정 */
-  opacity: 0.5; /* 전체 요소의 불투명도를 50%로 설정 */
+  font-size: 0.9em; /* Slightly smaller font size */
+  opacity: 0.5; /* Set opacity to 50% */
 }
 
 .project-content {
   display: flex;
   align-items: center;
-  gap: 10px; /* 이미지와 텍스트 간의 간격 설정 */
+  gap: 10px; /* Set gap between image and text */
   font-size: 0.8em;
 }
 
 .project-image {
-  width: 8vw; /* 이미지의 너비 설정 */
-  height: auto; /* 이미지의 높이를 비율에 맞게 설정 */
+  width: 8vw; /* Set image width */
+  height: auto; /* Maintain aspect ratio */
   max-height: 60px;
   object-fit: cover;
-  border-radius: 5px; /* 이미지 모서리를 둥글게 설정 */
+  border-radius: 5px; /* Rounded corners */
   transition: transform 0.3s ease;
 }
 
 .project-image:hover {
-  transform: scale(1.1); /* 이미지 크기를 10% 확대 */
+  transform: scale(1.1); /* Scale image by 10% */
 }
