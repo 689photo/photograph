@@ -29,6 +29,10 @@ p {
   opacity: 0.5; /* 전체 요소의 불투명도를 50%로 설정 */
 }
 
+.fa-github:hover {
+  color: red;
+}
+
 .left-section {
   position: sticky;
   top: 20px;
@@ -117,9 +121,9 @@ p {
   object-fit: cover; /* 이미지가 잘리지 않고 꽉 차도록 */
 }
 
-.sns-icon {
-  width: 2vw; /* 원하는 크기로 설정 */
-  height: 2vw; /* 원하는 크기로 설정 */
+.sns-icon img {
+  width: 3vw; /* 원하는 크기로 설정 */
+  height: 3vw; /* 원하는 크기로 설정 */
 }
 
 .name,
