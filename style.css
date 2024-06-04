@@ -1,5 +1,5 @@
 body {
-  font-family: 'M PLUS 2', 'Meiryo', sans-serif;
+  font-family: 'M PLUS Rounded 1c', 'Meiryo', sans-serif;
   background-color: #2e6a86;
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden; /* Prevents entire page scrolling */
-  font-size: 0.85vw;
+  font-size: 0.9vw;
 }
 
 .container {
@@ -42,7 +42,10 @@ p {
   gap: 1vw;
 }
 
-.profile,
+.profile {
+  margin-top: 0.5vw;
+}
+
 .common-box {
   padding: 0.5vw;
   border: 1px solid rgba(0, 0, 0, 0.1); /* Semi-transparent border */
@@ -77,7 +80,7 @@ p {
   display: flex; /* Flexbox for horizontal alignment */
   flex-direction: row; /* Align items horizontally */
   align-items: center; /* Vertically center items */
-  margin: 0 5px; /* Set margin between items */
+  margin: 0.2vw 0.2vw; /* Set margin between items */
 }
 
 .profile-detail {
@@ -94,6 +97,10 @@ p {
   padding-right: 0.5%;
 }
 
+.photo-gallery img {
+  border-radius: 10px;
+}
+
 /* Hide scrollbar */
 .photo-gallery {
   -ms-overflow-style: none; /* IE */
@@ -105,8 +112,8 @@ p {
 }
 
 .profile-picture {
-  width: 2.5vw;
-  height: 2.5vw;
+  width: 3vw;
+  height: 3vw;
   border-radius: 25%;
   object-fit: cover; /* Ensures image covers the area */
 }
@@ -132,13 +139,13 @@ p {
   display: flex;
   align-items: center;
   gap: 10px; /* Set gap between image and text */
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .project-image {
   width: 8vw; /* Set image width */
   height: auto; /* Maintain aspect ratio */
-  max-height: 60px;
+  max-height: 65px;
   object-fit: cover;
   border-radius: 5px; /* Rounded corners */
   transition: transform 0.3s ease;
