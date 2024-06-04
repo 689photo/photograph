@@ -52,6 +52,10 @@ p {
   border-radius: 10px; /* Rounded corners */
 }
 
+.introduce {
+  font-size: 0.9em;
+}
+
 .text-center {
   text-align: center;
 }
@@ -119,8 +123,9 @@ p {
 }
 
 .sns-icon img {
-  width: 3vw;
-  height: 3vw;
+  width: 2vw;
+  height: 2vw;
+  border-radius: 10px;
 }
 
 .name,
