@@ -1,5 +1,5 @@
 body {
-  font-family: 'M PLUS 2', 'Meiryo', sans-serif; /* Kosugi Maru 폰트 설정 */
+  font-family: 'M PLUS 2', 'Meiryo', sans-serif;
   background-color: #2e6a86;
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow: hidden; /* 전체 페이지 스크롤을 방지합니다 */
+  overflow: hidden; /* 전체 페이지 스크롤을 방지 */
   font-size: 0.85vw;
 }
 
@@ -24,8 +24,8 @@ body {
 }
 
 p {
-  margin: 2px 0; /* 위아래로 약간의 여백을 추가 */
-  font-size: 0.8em; /* 이메일 주소의 폰트 크기를 조금 작게 설정 */
+  margin: 2px 0; /* 약간의 여백을 추가 */
+  font-size: 0.8em; /* 폰트 크기를 조금 작게 설정 */
   opacity: 0.5; /* 전체 요소의 불투명도를 50%로 설정 */
 }
 
@@ -70,7 +70,7 @@ p {
 .right-align {
   display: flex;
   justify-content: flex-end; /* 컨텐츠를 오른쪽으로 정렬 */
-  gap: 0.3vw; /* 아이콘 간의 간격 설정 (필요에 따라 조절) */
+  gap: 0.3vw; /* 아이콘 간의 간격 설정 */
   align-items: center; /* 컨텐츠를 수직 중앙 정렬 */
 }
 
@@ -115,15 +115,15 @@ p {
 }
 
 .profile-picture {
-  width: 2.5vw; /* 원하는 크기로 설정 */
-  height: 2.5vw; /* 원하는 크기로 설정 */
+  width: 2.5vw;
+  height: 2.5vw;
   border-radius: 25%;
   object-fit: cover; /* 이미지가 잘리지 않고 꽉 차도록 */
 }
 
 .sns-icon img {
-  width: 3vw; /* 원하는 크기로 설정 */
-  height: 3vw; /* 원하는 크기로 설정 */
+  width: 3vw;
+  height: 3vw;
 }
 
 .name,
@@ -134,7 +134,7 @@ p {
 }
 
 .subname {
-  font-size: 0.9em; /* 이메일 주소의 폰트 크기를 조금 작게 설정 */
+  font-size: 0.9em; /* 폰트 크기를 조금 작게 설정 */
   opacity: 0.5; /* 전체 요소의 불투명도를 50%로 설정 */
 }
 
