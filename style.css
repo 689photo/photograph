@@ -1,5 +1,5 @@
 body {
-  font-family: "M PLUS Rounded 1c", "Meiryo", sans-serif;
+  font-family: 'M PLUS Rounded 1c', 'Meiryo', sans-serif;
   background-color: #2e6a86;
   margin: 0;
   padding: 0;
@@ -21,6 +21,23 @@ body {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow-y: auto; /* Enables vertical scrolling within the container */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2e6a86;
+  z-index: 9999;
+  transition: opacity 3s ease-out;
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
 }
 
 p {
@@ -29,8 +46,12 @@ p {
   opacity: 0.5; /* Sets overall opacity to 50% */
 }
 
+.fa-github {
+  transition: color 0.5s ease; /* 색상이 0.5초에 걸쳐 천천히 변합니다 */
+}
+
 .fa-github:hover {
-  color: red;
+  color: orange !important;
 }
 
 .left-section {
@@ -40,6 +61,8 @@ p {
   display: flex;
   flex-direction: column;
   gap: 1vw;
+  min-height: 100%;
+  overflow-y: auto; /* Enables vertical scrolling within the sections */
 }
 
 .profile {
@@ -94,6 +117,8 @@ p {
 .photo-gallery {
   width: 77.77%;
   height: 100%;
+  min-height: 100%;
+  overflow-y: auto; /* Enables vertical scrolling within the sections */
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -120,6 +145,7 @@ p {
   height: 3vw;
   border-radius: 25%;
   object-fit: cover; /* Ensures image covers the area */
+  display: block;
 }
 
 .sns-icon img {
