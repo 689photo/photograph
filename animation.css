@@ -57,7 +57,7 @@ body.fade-in {
 #backToHome {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 80px;
   width: 50px; /* 이미지 크기를 적절하게 조절 */
   height: 50px;
   cursor: pointer;
@@ -77,4 +77,10 @@ body.fade-in {
 
 #backToHome:hover {
   transform: scale(1.1); /* 호버 시 크기 증가 효과 */
+}
+
+@media (max-width: 768px) {
+  #backToHome {
+    right: 6vh;
+  }
 }

@@ -97,7 +97,7 @@ p {
 .right-align {
   display: flex;
   justify-content: flex-end; /* Align contents to the right */
-  gap: 0.3vw; /* Set gap between icons */
+  gap: 0.2vw; /* Set gap between icons */
   align-items: center; /* Vertically center contents */
 }
 
@@ -117,13 +117,13 @@ p {
 .photo-gallery {
   width: 77.77%;
   height: 100%;
-  min-height: 100%;
-  overflow-y: auto; /* Enables vertical scrolling within the sections */
   display: flex;
   flex-direction: column;
   gap: 10px;
   overflow-y: scroll; /* Enable vertical scrolling */
   padding-right: 0.5%;
+  position: relative; /* For positioning the see-more button */
+  z-index: 1; /* Ensure gallery is below see-more button */
 }
 
 .photo-gallery img {
@@ -138,6 +138,32 @@ p {
 
 .photo-gallery::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
+}
+
+.see-more-button {
+  position: fixed; /* Fixed position to ensure the button is always visible */
+  bottom: 6vh;
+  right: 5vw;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #000; /* Text color */
+  background-color: #f0f0f0; /* Light gray background */
+  text-decoration: none; /* Remove underline */
+  border: none;
+  border-radius: 20px; /* More rounded corners */
+  cursor: pointer;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease; /* Smooth transition for opacity */
+  z-index: 1000; /* Ensure button is above other content */
+}
+
+.see-more-button:hover {
+  background-color: #000; /* Background turns black on hover */
+  color: #fff; /* Text color turns white on hover */
+}
+
+.see-more-button.show {
+  opacity: 1; /* Make the button visible */
 }
 
 .profile-picture {
