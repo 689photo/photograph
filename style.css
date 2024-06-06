@@ -1,3 +1,4 @@
+/* Set basic styles for the body */
 body {
   font-family: 'M PLUS Rounded 1c', 'Meiryo', sans-serif;
   background-color: #2e6a86;
@@ -11,6 +12,7 @@ body {
   font-size: 0.9vw;
 }
 
+/* Container styling with initial fade-in properties */
 .container {
   width: 95%;
   height: 95%;
@@ -22,22 +24,15 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   overflow-y: auto; /* Enables vertical scrolling within the container */
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #2e6a86;
-  z-index: 9999;
-  transition: opacity 3s ease-out;
-  opacity: 1;
-}
-
-.fade-out {
   opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Container final state after fade-in */
+.container.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 p {
@@ -54,6 +49,7 @@ p {
   color: orange !important;
 }
 
+/* Left section styling with initial fade-in properties */
 .left-section {
   position: sticky;
   top: 20px;
@@ -63,6 +59,13 @@ p {
   gap: 1vw;
   min-height: 100%;
   overflow-y: auto; /* Enables vertical scrolling within the sections */
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+/* Left section final state after fade-in */
+.left-section.fade-in {
+  opacity: 1;
 }
 
 .profile {
@@ -114,6 +117,7 @@ p {
   margin-left: 0.9vw;
 }
 
+/* Photo gallery styling with initial fade-in properties */
 .photo-gallery {
   width: 77.77%;
   height: 100%;
@@ -124,6 +128,13 @@ p {
   padding-right: 0.5%;
   position: relative; /* For positioning the see-more button */
   z-index: 1; /* Ensure gallery is below see-more button */
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+/* Photo gallery final state after fade-in */
+.photo-gallery.fade-in {
+  opacity: 1;
 }
 
 .photo-gallery img {
@@ -210,4 +221,17 @@ p {
 
 .project-image:hover {
   transform: scale(1.1); /* Scale image by 10% */
+}
+
+/* Common fade-in effect for elements */
+.fade-in-element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Final state for elements after fade-in */
+.fade-in-element.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

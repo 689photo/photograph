@@ -1,27 +1,59 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const overlay = document.querySelector('.overlay');
-  const seeMoreButton = document.getElementById('seeMoreButton');
+  const container = document.querySelector('.container');
+  const leftSection = document.querySelector('.left-section');
   const gallery = document.querySelector('.photo-gallery');
 
-  // 오버레이 관련 코드 (필요 시)
-  setTimeout(() => {
-    overlay.classList.add('fade-out');
-  }, 1000);
+  const profileSection = document.querySelector('.profile');
+  const introduceSection = document.querySelector('.introduce');
+  const miniProjectsSection = document.querySelector('.mini-projects');
+  const snsListSection = document.querySelector('.sns-list');
 
+  // Fade in the container
   setTimeout(() => {
-    overlay.style.display = 'none';
-  }, 4000);
+    container.classList.add('fade-in');
+  }, 100);
 
-  // 초기 상태에서 버튼을 숨김
+  // Fade in the left section
+  setTimeout(() => {
+    leftSection.classList.add('fade-in');
+  }, 600); // 1 second delay
+
+  // Fade in the profile section
+  setTimeout(() => {
+    profileSection.classList.add('visible');
+  }, 1100); // 2 seconds delay
+
+  // Fade in the introduction section
+  setTimeout(() => {
+    introduceSection.classList.add('visible');
+  }, 1600); // 3 seconds delay
+
+  // Fade in the mini projects section
+  setTimeout(() => {
+    miniProjectsSection.classList.add('visible');
+  }, 2100); // 4 seconds delay
+
+  // Fade in the SNS list section
+  setTimeout(() => {
+    snsListSection.classList.add('visible');
+  }, 2600); // 5 seconds delay
+
+  // Fade in the photo gallery
+  setTimeout(() => {
+    gallery.classList.add('fade-in');
+  }, 3100); // 6 seconds delay
+
+  // Scroll event listener for "See More" button
+  const seeMoreButton = document.getElementById('seeMoreButton');
+
   seeMoreButton.classList.remove('show');
 
-  // 스크롤 이벤트 리스너 추가
   gallery.addEventListener('scroll', function () {
     const scrollTop = gallery.scrollTop;
     const scrollHeight = gallery.scrollHeight;
     const clientHeight = gallery.clientHeight;
 
-    // 갤러리의 중간에 도달했을 때 버튼 표시
+    // Show button when scrolled to the middle
     if (scrollTop > (scrollHeight - clientHeight) / 2) {
       seeMoreButton.classList.add('show');
     } else {
@@ -29,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // 초기 상태에서 스크롤 위치를 확인하여 버튼을 표시할지 결정
+  // Initial check for "See More" button visibility
   const initialScrollTop = gallery.scrollTop;
   const scrollHeight = gallery.scrollHeight;
   const clientHeight = gallery.clientHeight;
