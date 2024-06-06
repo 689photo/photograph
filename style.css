@@ -153,8 +153,8 @@ p {
 
 .see-more-button {
   position: fixed; /* Fixed position to ensure the button is always visible */
-  bottom: 6vh;
-  right: 5vw;
+  bottom: 4vh;
+  right: 3vw;
   padding: 10px 20px;
   font-size: 1em;
   color: #000; /* Text color */
@@ -189,6 +189,11 @@ p {
   width: 2vw;
   height: 2vw;
   border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.sns-icon img:hover {
+  transform: scale(1.1);
 }
 
 .name,
@@ -220,7 +225,7 @@ p {
 }
 
 .project-image:hover {
-  transform: scale(1.1); /* Scale image by 10% */
+  transform: scale(1.05); /* Scale image by 10% */
 }
 
 /* Common fade-in effect for elements */
