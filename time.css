@@ -64,7 +64,7 @@ h1 {
   padding: var(--spacing);
   list-style: none;
   text-align: left;
-  max-width: 600px;
+  max-width: 700px;
   opacity: 0; /* Initially hidden */
   animation: fadeIn var(--fade-duration) ease-in-out forwards;
 }
@@ -90,6 +90,33 @@ h1 {
 .timeline .event-content {
   display: flex;
   align-items: flex-start;
+}
+
+.event-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.text-content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.text-content h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.text-content p {
+  margin: 0.5em 0 0 0;
+  font-size: 1em;
+}
+
+.event-content img {
+  max-width: 150px; /* 원하는 이미지 크기로 조정 */
+  height: auto;
+  margin-left: 20px; /* 이미지와 텍스트 사이의 간격 조정 */
 }
 
 .timeline .event-content img {
