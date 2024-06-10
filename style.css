@@ -41,6 +41,11 @@ p {
   opacity: 0.5; /* Sets overall opacity to 50% */
 }
 
+a {
+  color: inherit; /* 부모 요소의 색상을 상속 */
+  text-decoration: none; /* 기본 하이퍼링크 밑줄 제거 */
+}
+
 .fa-github {
   transition: color 0.5s ease; /* 색상이 0.5초에 걸쳐 천천히 변합니다 */
 }
